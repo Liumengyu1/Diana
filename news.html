@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Diana品牌新闻</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="icon" href="img/logo.ico" type="img/x-ico" />
+		<!--<link rel="stylesheet" type="text/css" href="css/news.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style type="text/css">
+			.line-bott a{
+				border-bottom: 2px solid #333;
+			}
+			.bott{
+				width: 70px;
+				height: 70px;
+				margin-top:-35px;
+				margin-left: -35px;
+			}
+			.triangle{
+			    border-width:15px 0 15px 24px;
+			    margin-left: 28px;
+   				margin-top: 20px;
+			}
+			h1 {
+				text-align: center;
+				font-size: 30px;
+				color: #333;
+				padding: 50px 0 30px 0;
+			}
+			
+			h1 p {
+				padding: 10px;
+				font-size: 16px;
+			}
+			
+			.nav {
+				overflow: hidden;
+			}
+			
+			.nav .new-left {
+				float: left;
+			}
+			
+			.nav .new-left p {
+				font-size: 26px;
+				color: #333333;
+			}
+			
+			.new-left li {
+				float: left;
+				margin-right: 40px;
+			}
+			
+			.new-left_tit p {
+				border-bottom: 1px solid #d9d9d9;
+				padding-bottom: 20px;
+			}
+			
+			.new-left a {
+				font-size: 16px;
+				line-height: 30px;
+				color: #666666;
+			}
+			.new-left li:hover a{
+				border-bottom: 1px solid #999;
+			}
+			.new-right {
+				float: left;
+			}
+			
+			.new-left {
+				margin-right: 40px;
+				margin-bottom: 40px;
+			}
+			
+			.new-right_a li {
+				margin-top: 17px;
+			}
+			
+			.new-right_a a {
+				font-size: 16px;
+				color: #999;
+			}
+			.new-right_a a:hover{
+				color: #666;
+				border-bottom: 1px solid #999;
+			}
+			.connter {
+				overflow: hidden;
+				padding-bottom: 40px;
+			}
+			
+			.nav_body {
+				width: 1200px;
+				overflow: hidden;
+				margin: 0 auto;
+				padding-top: 4px;
+			}
+			
+			.new_time_tit {
+				font-size: 26px;
+				color: #333333;
+				border-bottom: 1px solid #d9d9d9;
+				padding-bottom: 20px;
+				display: block;
+			}
+			
+			.new_time li {
+				width: 372px;
+				float: left;
+			}
+			
+			.new_time_img {
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			.banner1 {
+				margin-bottom: 40px !important;
+			}
+			
+			.new_time li {
+				margin-right: 42px;
+			}
+			
+			.new_time ul {
+				padding-top: 5px;
+			}
+			.news_button{
+				text-align: center;
+			}
+			.news_button p {
+				display: inline-block;/*解决IE不兼容块元素转换内联元素*/
+				display: initial;
+				font-size: 18px;
+				background: #fff;
+				border: 1px solid #000;
+				color: #000;
+				margin: 0 auto;
+				outline: none;
+				padding: 20px 50px;
+				transition: all .3s;
+			}
+			.news_button p:hover{
+				background: #000;
+				color: #fff;
+			}
+		</style>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="nav-box">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"><img src="img/nav-footer/logo.png" /></a>
+				</div>
+				<div class="nav-list-box container">
+					<ul id="nav-list">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="Perfume.html">香水</a>
+						</li>
+						<li>
+							<a href="package.html">包包</a>
+						</li>
+						<li>
+							<a href="clothes.html">服装</a>
+						</li>
+						<li class="line-bott">
+							<a href="news.html">品牌新闻</a>
+						</li>
+						<li>
+							<a href="about.html">Diana品牌</a>
+						</li>
+					</ul>
+					<div class="query fr">
+						<div class="query-ico"><a href="">专柜查询</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="nav-fixed-box">
+			<div class="nav-list-box container">
+				<div class="fixed-logo">
+					<a href="index.html"><img src="img/nav-footer/logo.png" /></a>
+				</div>
+				<div id="nav-fixed"></div>
+			</div>
+			<div class="line"></div>
+		</div>
+
+		<h1>新闻动态<p>News</p></h1>
+		<div class="banner1" style="overflow: hidden;margin-bottom: 60px;">
+			<div class="container">
+				<img src="img/图层-5.png" />
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="container">
+				<div class="new-left">
+					<div class="new-left_tit">
+						<p style="margin-top: 4px;">新店开张</p>
+					</div>
+
+					<ul style="padding-top: 20px;">
+						<li style="width: 256px;">
+							<a >
+								<div class="" style="overflow: hidden;">
+									<img src="img/图层-6.png" />
+
+								</div>
+								当新店开业遇上开学季，给你意想不到的惊喜！热烈庆祝知名品牌Diana新店开张。
+							</a>
+						</li>
+						<li style="width: 256px;">
+							<a>
+								<div class="" style="overflow: hidden;">
+									<img src="img/图层-7.png" />
+								</div>
+								广大顾客朋友们！你们好！在国庆节来临之际，我们Diana分店隆重开业了！
+							</a>
+						</li>
+						<li style="width: 256px;margin-right: 0px;">
+							<a>
+								<div class="" style="overflow: hidden;">
+									<img src="img/图层-8.png" />
+								</div>
+								必须难忘的一《此店是我开,次布是我卖，要想得宝贝，还的来我家》
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="new-right">
+					<div class="new-left_tit">
+						<p style="margin-top: 4px;font-size: 26px;color: #333333;">最新动态</p>
+					</div>
+					<div class="new-right_a">
+						<ol>
+							<li>
+								<a>·Diana在2018年9月9日成功入驻韩国等...</a>
+							</li>
+							<li>
+								<a>·Diana又出新样式了，不会吧？这么快！</a>
+							</li>
+							<li>
+								<a>·Diana马云将于9月20日成为Diana股东...</a>
+							</li>
+							<li>
+								<a>·2018年夏季时装秀有的冠军，真的优秀！</a>
+							</li>
+							<li>
+								<a>·Diana在2018年9月9日成功入驻韩国等...</a>
+							</li>
+							<li>
+								<a>·2019Diana夏季时装秀做准备</a>
+							</li>
+							<li>
+								<a>·Diana这么强？月销售已达亿元</a>
+							</li>
+							<li>
+								<a>·非洲等地区要求Diana在此建设分店</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav_body">
+			<div class="new_time">
+
+				<ul style="margin-bottom: 40px;overflow: hidden;">
+					<li>
+						<div class="new_time_tit">
+							Diana集团2018年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层 5.jpg" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="new_time_tit">
+							Diana集团2017年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层-10.png" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="" style="margin-right: 0px;">
+						<div class="new_time_tit">
+							Diana集团2016年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层-11.png" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+				<ul style="margin-bottom: 60px;overflow: hidden;  ">
+					<li>
+						<div class="new_time_tit">
+							Diana集团2015年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层 4.jpg" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="new_time_tit">
+							Diana集团2014年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层 3.jpg" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="" style="margin-right: 0px;">
+						<div class="new_time_tit">
+							Diana集团2013年时装秀
+						</div>
+						<div class="new_time_img">
+							<a href="">
+								<img src="img/图层 2.jpg" />
+								<div class="video">
+									<div class="Mask">
+										<div class="bott">
+											<div class="triangle"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="news_button" style="margin-bottom: 60px;">
+
+			<a href=""><p>点击查看更早之前的视频</p></a>
+
+		</div>
+
+		
+
+		<div class="footer-box">
+			<div class="footer-top-color">
+				<div class="footer container">
+					<div class="footer-top clearfix">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/nav-footer/footer-zhengpin.png" />
+									<p>100%官方正品保证</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/nav-footer/footer-fukuan.png" height="48" />
+									<p>支持多种付款方式</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/nav-footer/footer-tehui.png" />
+									<p>专享官网特惠待遇</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/nav-footer/footer-dianhua.png" />
+									<p>联系我们</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bott clearfix container">
+				<div class="top_box">
+					<a href="">
+						<div class="top"><img src="img/nav-footer/fanhui2.png" /></div>
+					</a>
+				</div>
+				<dl>
+					<dt>香水</dt>
+					<dd><a href="">香精型</a></dd>
+					<dd><a href="">纯香性</a></dd>
+					<dd><a href="">洗浴型</a></dd>
+				</dl>
+				<dl>
+					<dt>包包</dt>
+					<dd><a href="">女士包包</a></dd>
+					<dd><a href="">手提包</a></dd>
+					<dd><a href="">男士斜挎包</a></dd>
+				</dl>
+				<dl>
+					<dt>服饰</dt>
+					<dd><a href="">女装</a></dd>
+					<dd><a href="">男装</a></dd>
+				</dl>
+				<dl>
+					<dt>关注Diana</dt>
+					<dd>
+						<a href=""><img src="img/nav-footer/weibo.png" />微博</a>
+					</dd>
+					<dd>
+						<a href=""><img src="img/nav-footer/weixin.png" />微信</a>
+					</dd>
+					<dd>
+						<a href=""><img src="img/nav-footer/youku.png" />优酷</a>
+					</dd>
+					<dd>
+						<a href=""><img src="img/nav-footer/zaixian.png" />在线顾问</a>
+					</dd>
+				</dl>
+				<div class="footer-logo">
+					<a href="index.html"><img src="img/nav-footer/logo.png" /></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<span><a href="">Diana(中国)有限公司</a></span><span><a href=""><img src="img/nav-footer/beian.png"/>泸ICP备08100043号-28</a></span><span><a href="">服务热线：400-678-7890</a></span>
+			</div>
+		</div>
+
+	</body>
+
+</html>

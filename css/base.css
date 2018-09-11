@@ -1,0 +1,364 @@
+@charset "utf-8";
+html {
+	background: #fff;
+	overflow: auto;
+}
+
+body {
+	font: 12px/18px "Microsoft Yahei";
+	font-weight: lighter;
+	color: #333;
+}
+a {
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0 none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #333 !important;
+}
+
+
+
+a:focus {
+	-moz-outline-style: none;
+	border: 0px;
+	blr: expression(this.onFocus=this.blur());
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer,
+article,
+aside,
+section,
+nav,
+menu,
+hgroup,
+details,
+dialog,
+figure,
+figcaption {
+	display: block
+}
+
+ol,
+li,
+ul,
+dl,
+dt,
+dd {
+	list-style: none;
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+submit,
+input,
+select {
+	vertical-align: middle;
+}
+
+button,
+submit {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: lighter;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+select,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	outline-style: none;
+	outline-width: 0pt;
+	padding: 0;
+	margin: 0;
+}
+
+b,
+em,
+i {
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.container {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*导航-底部*/
+.logo{
+	text-align: center;
+	padding: 20px 0;
+}
+.logo img{
+	width: 160px;
+	height: 45px;
+}
+.hr{
+	width: 1200px;
+}
+
+.nav-list-box{
+	overflow: hidden;
+}
+#nav-list ul{
+	display: inline;
+}
+#nav-list li{
+	float: left;
+	padding: 20px 40px;
+}
+#nav-list li a{
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 19px 0;
+	transition: all .3s;
+}
+#nav-list li a:hover{
+	border-bottom:2px solid #333;
+}
+
+
+
+
+.nav-fixed-box{
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	background: rgba(255,255,255,1);	
+}
+.nav-fixed-box #nav-list{
+	float: right;
+}
+#nav-list{
+	margin-right: -40px;
+}
+.fixed-logo{
+	display: initial;
+	float: left;
+}
+.fixed-logo img{
+	padding-top: 15px;
+	width: 120px;
+	height: 30px;
+}
+
+
+
+
+.line{
+	border-top: 1px solid #d9d9d9;
+	box-shadow: 0 1px 2px #ededed;
+}
+.query{
+	padding:15px 0;
+}
+.query-ico{
+	cursor: pointer;
+	width: 50px;
+	background: url(../img/nav-footer/yanzheng-moren.png) no-repeat;
+	background-position-y: 5px;
+	background-size: 13px 18px;
+	padding:5px 0px 5px 20px;
+}
+.query-ico a{
+	color: #999;
+	font-weight: 500;
+}
+/*footer*/
+.footer-top-color{
+	background: #000;
+}
+
+.footer-top li p{
+	padding-top: 10px;
+	color: #fff;
+	transition: all .3s;
+}
+.footer-top li{
+	width: 24.9%;
+	text-align: center;
+	float: left;
+	border-right: 1px solid #666;
+}
+.footer-top li:first-of-type{
+	padding-left: 0;
+}
+.footer-top li:last-of-type{
+	padding-right: 0;
+	border: 0;
+}
+.footer-top img{
+	display:inline-block;
+}
+.footer-top{
+	padding: 50px 0;
+	font-size: 16px;
+}
+
+.footer-bott{
+	padding-top: 60px;
+	/*position: relative;*/
+}
+.footer-bott .top_box{
+	position: fixed;
+	right: 3%;
+	bottom: 30px;
+	width: 60px;
+	height: 60px;
+	/*border: 1px solid #333;*/
+	text-align: center;
+	background: #000;
+	transition: all .3s; 
+}
+
+.topAdd{
+	background: #fff !important;
+	border: 1px solid #000 !important;
+}
+
+.footer-bott .top img{
+	padding:20px 0 0 0;
+	width: 40px;
+}
+.footer-bott dl{
+	float: left;
+	padding: 0 80px;
+}
+.footer-bott dt{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	padding-bottom: 10px;
+}
+.footer-bott dd{
+	padding: 4px 0;
+	font-size: 14px;
+	color: #666;
+	font-weight: 500;
+}
+.footer-bott img{
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.footer-top li:hover p{
+	color: #999;
+}
+.footer-logo{
+	display: initial;
+	padding-left: 40px;
+}
+.footer-logo img{
+	width: 220px;
+	height: 60px;
+	padding-top: 35px;
+}
+.copyright{
+	text-align: center;
+	padding: 30px 0;
+	font-size: 14px;
+}
+.copyright span{
+	padding: 0 30px;
+}
+.copyright span img{
+	vertical-align: middle;	
+	margin-top: -2px;
+	padding-right: 5px;
+}
